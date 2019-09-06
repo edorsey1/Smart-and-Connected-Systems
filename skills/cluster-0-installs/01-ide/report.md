@@ -1,6 +1,6 @@
 #  Skill Name
 
-Author: FirstName LastName, YYYY-MM-DD
+Author: Erin Dorsey, 2019-09-03
 
 ## Summary
 I <3 Atom
