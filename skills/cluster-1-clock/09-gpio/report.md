@@ -1,9 +1,9 @@
 #  Skill Name
 
-Author: FirstName LastName, YYYY-MM-DD
+Author: Erin Dorsey, 2019-09-10
 
 ## Summary
-
+Successfully built blinking binary counter
 
 ## Sketches and Photos
 
