@@ -8,6 +8,7 @@ Build a module using FreeRTOS with tasks to create an LED counter that counts up
 ## Sketches and Photos
 ![Image](./images/IMG_6334.jpg)
 ![Image](./images/IMG_6333.jpg)
+
 [Video](https://drive.google.com/open?id=1miWJg9prIwaaBURuX_z817WgSGcYtWqM)
 
 ## Modules, Tools, Source Used in Solution
