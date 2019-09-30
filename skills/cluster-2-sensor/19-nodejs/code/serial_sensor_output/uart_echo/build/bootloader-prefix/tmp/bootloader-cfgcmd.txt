@@ -1,0 +1,1 @@
+cmd='C:/Users/erind/.espressif/tools/cmake/3.13.4/bin/cmake.exe;-DSDKCONFIG=C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/19-nodejs/code/serial_sensor_output/uart_echo/sdkconfig;-DIDF_PATH=C:/Users/erind/OneDrive/Desktop/esp-idf;-DEXTRA_COMPONENT_DIRS=C:/Users/erind/OneDrive/Desktop/esp-idf/components/bootloader;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'

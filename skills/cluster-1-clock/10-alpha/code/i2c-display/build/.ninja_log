@@ -901,3 +901,16 @@
 103	178	5900236494479319	bootloader/bootloader.elf	d0da9b449bcf5f7f
 103	178	5900236494479319	bootloader/bootloader.bin	d0da9b449bcf5f7f
 103	178	5900236494479319	bootloader/bootloader.map	d0da9b449bcf5f7f
+43	28950	5910550027144322	build.ninja	51cdcaf5fc0cc59
+374	1115	5900236494479319	bootloader-prefix/src/bootloader-stamp/bootloader-build	d0da9b449bcf5f7f
+374	1115	5900236494479319	bootloader/bootloader.elf	d0da9b449bcf5f7f
+374	1115	5900236494479319	bootloader/bootloader.bin	d0da9b449bcf5f7f
+374	1115	5900236494479319	bootloader/bootloader.map	d0da9b449bcf5f7f
+487	3176	5910550060470280	main/CMakeFiles/main.dir/i2c_display.c.obj	b71116dbe2ea9c76
+3177	3752	5910550067855767	main/libmain.a	a9c42bbe7dddc84e
+3753	9392	5910550123597993	i2c-display.elf	ac83a44bfc413f57
+9393	10057	5910550131008178	i2c-display.bin	a150384e3a644928
+166	305	5900236494479319	bootloader-prefix/src/bootloader-stamp/bootloader-build	d0da9b449bcf5f7f
+166	305	5900236494479319	bootloader/bootloader.elf	d0da9b449bcf5f7f
+166	305	5900236494479319	bootloader/bootloader.bin	d0da9b449bcf5f7f
+166	305	5900236494479319	bootloader/bootloader.map	d0da9b449bcf5f7f
