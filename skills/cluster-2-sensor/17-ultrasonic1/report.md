@@ -1,6 +1,6 @@
 #  17 Ultrasonic
 
-Author: FirstName LastName, YYYY-MM-DD
+Author: Erin Dorsey, 2019-09-26
 
 ## Summary
 Built an ultrasonic sensor that measures distance of object from sensor and displays to console. 
