@@ -6,8 +6,8 @@ Author: Erin Dorsey, 2019-09-24
 Built a battery monitor that would display voltage value on the alpha numeric display. 
 
 ## Sketches and Photos
-![Image](./images/IMG_6368)
-![Image](./images/IMG_6369)
+![Image](./images/IMG_6368.jpg)
+![Image](./images/IMG_6369.jpg)
 
 ## Modules, Tools, Source Used in Solution
 
