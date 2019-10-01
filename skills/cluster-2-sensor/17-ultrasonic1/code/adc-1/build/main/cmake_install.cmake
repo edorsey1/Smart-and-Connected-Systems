@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/main
+# Install script for directory: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/adc")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/adc-1")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

@@ -7,7 +7,7 @@
         "0x8000" : "partition_table/partition-table.bin",
         "" : "",
         "" : "",
-        "0x10000" : "adc.bin"
+        "0x10000" : "adc-1.bin"
     },
     "bootloader" :      { "offset" : "0x1000",
                           "file" : "bootloader/bootloader.bin" },
@@ -16,5 +16,5 @@
     "otadata" : { "offset" : "",
                   "file" : "" },
     "app" :             { "offset" : "0x10000",
-                          "file" : "adc.bin" }
+                          "file" : "adc-1.bin" }
 }

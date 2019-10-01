@@ -17,7 +17,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
 
-The C compiler identification is GNU, found in "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/3.13.4/CompilerIdC/CMakeCCompilerId.o"
+The C compiler identification is GNU, found in "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/3.13.4/CompilerIdC/CMakeCCompilerId.o"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: C:/Users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-g++.exe 
@@ -30,23 +30,23 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
 
-The CXX compiler identification is GNU, found in "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/3.13.4/CompilerIdCXX/CMakeCXXCompilerId.o"
+The CXX compiler identification is GNU, found in "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/3.13.4/CompilerIdCXX/CMakeCXXCompilerId.o"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_5355e"
-[1/2] Building C object CMakeFiles/cmTC_5355e.dir/testCCompiler.c.obj
-[2/2] Linking C executable cmTC_5355e
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_3295f"
+[1/2] Building C object CMakeFiles/cmTC_3295f.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_3295f
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400054
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_7d9fc"
-[1/2] Building C object CMakeFiles/cmTC_7d9fc.dir/CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_7d9fc
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_0eb95"
+[1/2] Building C object CMakeFiles/cmTC_0eb95.dir/CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_0eb95
 Using built-in specs.
 COLLECT_GCC=C:\Users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
 COLLECT_LTO_WRAPPER=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe
@@ -56,18 +56,18 @@ Thread model: posix
 gcc version 5.2.0 (crosstool-NG crosstool-ng-1.22.0-80-g6c4433a5) 
 COMPILER_PATH=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib/
-COLLECT_GCC_OPTIONS='-nostdlib' '-v' '-o' 'cmTC_7d9fc'
- c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe -plugin c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccHBRmlT.res --sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot -o cmTC_7d9fc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib CMakeFiles/cmTC_7d9fc.dir/CMakeCCompilerABI.c.obj
+COLLECT_GCC_OPTIONS='-nostdlib' '-v' '-o' 'cmTC_0eb95'
+ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe -plugin c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccDLdNDB.res --sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot -o cmTC_0eb95 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib CMakeFiles/cmTC_0eb95.dir/CMakeCCompilerABI.c.obj
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_7d9fc"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_7d9fc.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [[2/2] Linking C executable cmTC_7d9fc]
+  ignore line: [Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_0eb95"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_0eb95.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [[2/2] Linking C executable cmTC_0eb95]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\Users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe]
@@ -83,22 +83,22 @@ Parsed C implicit link information from above output:
   ignore line: [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/]
   ignore line: [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib/]
   ignore line: [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-nostdlib' '-v' '-o' 'cmTC_7d9fc']
-  link line: [ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe -plugin c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccHBRmlT.res --sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot -o cmTC_7d9fc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib CMakeFiles/cmTC_7d9fc.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [COLLECT_GCC_OPTIONS='-nostdlib' '-v' '-o' 'cmTC_0eb95']
+  link line: [ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe -plugin c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccDLdNDB.res --sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot -o cmTC_0eb95 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib CMakeFiles/cmTC_0eb95.dir/CMakeCCompilerABI.c.obj]
     arg [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccHBRmlT.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccDLdNDB.res] ==> ignore
     arg [--sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7d9fc] ==> ignore
+    arg [cmTC_0eb95] ==> ignore
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0]
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc]
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib]
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib]
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib]
-    arg [CMakeFiles/cmTC_7d9fc.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_0eb95.dir/CMakeCCompilerABI.c.obj] ==> ignore
   collapse library dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0] ==> [C:/Users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0]
   collapse library dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> [C:/Users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/lib/gcc]
   collapse library dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib] ==> [C:/Users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/xtensa-esp32-elf/lib]
@@ -112,11 +112,11 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_58ec8"
-[1/2] Building C object CMakeFiles/cmTC_58ec8.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_58ec8
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_c9b6b"
+[1/2] Building C object CMakeFiles/cmTC_c9b6b.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_c9b6b
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 
@@ -127,11 +127,11 @@ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtens
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_0ebfb"
-[1/2] Building C object CMakeFiles/cmTC_0ebfb.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_0ebfb
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_bda4a"
+[1/2] Building C object CMakeFiles/cmTC_bda4a.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_bda4a
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 
@@ -142,11 +142,11 @@ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtens
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_b9d70"
-[1/2] Building C object CMakeFiles/cmTC_b9d70.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_b9d70
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_39094"
+[1/2] Building C object CMakeFiles/cmTC_39094.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_39094
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 
@@ -155,20 +155,20 @@ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtens
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_0041a"
-[1/2] Building CXX object CMakeFiles/cmTC_0041a.dir/testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_0041a
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_c1e6e"
+[1/2] Building CXX object CMakeFiles/cmTC_c1e6e.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_c1e6e
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400054
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_b466a"
-[1/2] Building CXX object CMakeFiles/cmTC_b466a.dir/CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_b466a
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_3b556"
+[1/2] Building CXX object CMakeFiles/cmTC_3b556.dir/CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_3b556
 Using built-in specs.
 COLLECT_GCC=C:\Users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
 COLLECT_LTO_WRAPPER=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe
@@ -178,18 +178,18 @@ Thread model: posix
 gcc version 5.2.0 (crosstool-NG crosstool-ng-1.22.0-80-g6c4433a5) 
 COMPILER_PATH=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib/;c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib/
-COLLECT_GCC_OPTIONS='-nostdlib' '-v' '-o' 'cmTC_b466a'
- c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe -plugin c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccKdDXyM.res --sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot -o cmTC_b466a -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib CMakeFiles/cmTC_b466a.dir/CMakeCXXCompilerABI.cpp.obj
+COLLECT_GCC_OPTIONS='-nostdlib' '-v' '-o' 'cmTC_3b556'
+ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe -plugin c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccHFta3J.res --sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot -o cmTC_3b556 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib CMakeFiles/cmTC_3b556.dir/CMakeCXXCompilerABI.cpp.obj
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_b466a"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_b466a.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [[2/2] Linking CXX executable cmTC_b466a]
+  ignore line: [Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_3b556"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_3b556.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [[2/2] Linking CXX executable cmTC_3b556]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\Users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe]
@@ -205,22 +205,22 @@ Parsed CXX implicit link information from above output:
   ignore line: [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib/]
   ignore line: [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib/]
   ignore line: [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-nostdlib' '-v' '-o' 'cmTC_b466a']
-  link line: [ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe -plugin c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccKdDXyM.res --sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot -o cmTC_b466a -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib CMakeFiles/cmTC_b466a.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [COLLECT_GCC_OPTIONS='-nostdlib' '-v' '-o' 'cmTC_3b556']
+  link line: [ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe -plugin c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccHFta3J.res --sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot -o cmTC_3b556 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0 -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib -Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib CMakeFiles/cmTC_3b556.dir/CMakeCXXCompilerABI.cpp.obj]
     arg [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/5.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccKdDXyM.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\erind\AppData\Local\Temp\ccHFta3J.res] ==> ignore
     arg [--sysroot=c:\users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\../xtensa-esp32-elf/sysroot] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b466a] ==> ignore
+    arg [cmTC_3b556] ==> ignore
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0]
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc]
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib]
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/lib]
     arg [-Lc:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib] ==> dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../xtensa-esp32-elf/sysroot/usr/lib]
-    arg [CMakeFiles/cmTC_b466a.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTC_3b556.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
   collapse library dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0] ==> [C:/Users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0]
   collapse library dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> [C:/Users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/lib/gcc]
   collapse library dir [c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/lib] ==> [C:/Users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/xtensa-esp32-elf/lib]
@@ -234,11 +234,11 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1z] compiler features compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_2c2dc"
-[1/2] Building CXX object CMakeFiles/cmTC_2c2dc.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_2c2dc
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_4d841"
+[1/2] Building CXX object CMakeFiles/cmTC_4d841.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_4d841
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 
@@ -302,11 +302,11 @@ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtens
 
 
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_ecf13"
-[1/2] Building CXX object CMakeFiles/cmTC_ecf13.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_ecf13
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_47428"
+[1/2] Building CXX object CMakeFiles/cmTC_47428.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_47428
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 
@@ -370,11 +370,11 @@ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtens
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_756b6"
-[1/2] Building CXX object CMakeFiles/cmTC_756b6.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_756b6
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_d0c38"
+[1/2] Building CXX object CMakeFiles/cmTC_d0c38.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_d0c38
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 
@@ -438,11 +438,11 @@ c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtens
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_49bcd"
-[1/2] Building CXX object CMakeFiles/cmTC_49bcd.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_49bcd
+Run Build Command:"C:/Users/erind/.espressif/tools/ninja/1.9.0/ninja.exe" "cmTC_5e1a9"
+[1/2] Building CXX object CMakeFiles/cmTC_5e1a9.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_5e1a9
 c:/users/erind/.espressif/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/5.2.0/../../../../xtensa-esp32-elf/bin/ld.exe: warning: cannot find entry symbol _start; defaulting to 00400074
 
 

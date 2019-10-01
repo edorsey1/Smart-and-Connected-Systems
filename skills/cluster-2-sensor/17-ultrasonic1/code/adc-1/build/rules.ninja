@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: adc
+# Project: adc-1
 # Configuration: 
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__adc.2eelf
+rule C_COMPILER__adc-1.2eelf
   depfile = $DEP_FILE
   deps = gcc
   command = ccache C:\Users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out   -c $in
@@ -24,7 +24,7 @@ rule C_COMPILER__adc.2eelf
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__adc.2eelf
+rule CXX_EXECUTABLE_LINKER__adc-1.2eelf
   command = cmd.exe /C "$PRE_LINK && C:\Users\erind\.espressif\tools\xtensa-esp32-elf\1.22.0-80-g6c4433a5-5.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -1062,7 +1062,7 @@ rule C_STATIC_LIBRARY_LINKER__main
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\erind\.espressif\tools\cmake\3.13.4\bin\cmake.exe -SC:\Users\erind\Documents\Cpp\EC444\Dorsey-Erin\skills\cluster-2-sensor\17-ultrasonic1\code\adc -BC:\Users\erind\Documents\Cpp\EC444\Dorsey-Erin\skills\cluster-2-sensor\17-ultrasonic1\code\adc\build
+  command = C:\Users\erind\.espressif\tools\cmake\3.13.4\bin\cmake.exe -SC:\Users\erind\Documents\Cpp\EC444\Dorsey-Erin\skills\cluster-2-sensor\17-ultrasonic1\code\adc-1 -BC:\Users\erind\Documents\Cpp\EC444\Dorsey-Erin\skills\cluster-2-sensor\17-ultrasonic1\code\adc-1\build
   description = Re-running CMake...
   generator = 1
 

@@ -1,9 +1,9 @@
 {
     "project_name":       "bootloader",
     "project_path":       "C:/Users/erind/OneDrive/Desktop/esp-idf/components/bootloader/subproject",
-    "build_dir":          "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader",
-    "config_file":        "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/sdkconfig",
-    "config_defaults":    "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/sdkconfig.defaults",
+    "build_dir":          "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader",
+    "config_file":        "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/sdkconfig",
+    "config_defaults":    "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/sdkconfig.defaults",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
     "git_revision":       "v3.2.2",

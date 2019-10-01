@@ -34,16 +34,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/soc/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/spi_flash/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/micro-ecc/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/bootloader_support/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/main/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/esptool_py/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/partition_table/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/esp32/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/log/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/bootloader/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/soc/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/spi_flash/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/micro-ecc/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/bootloader_support/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/main/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/esptool_py/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/partition_table/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/esp32/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/log/cmake_install.cmake")
+  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/bootloader/cmake_install.cmake")
 
 endif()
 
@@ -55,5 +55,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
