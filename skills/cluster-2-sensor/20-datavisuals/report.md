@@ -1,12 +1,13 @@
 #  Skill Name
 
-Author: FirstName LastName, YYYY-MM-DD
+Author: Erin Dorsey, 2019-10-01
 
 ## Summary
 
 
 ## Sketches and Photos
-
+![Image](./images/canvas1.png)
+![Image](./images/canvas2.png)
 
 ## Modules, Tools, Source Used in Solution
 
