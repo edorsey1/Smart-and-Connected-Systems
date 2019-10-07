@@ -1,3 +1,3 @@
 # Code Readme
 
-Brief explanation on how to navigate your code folder. For example, main consists of the entry function, and lib are where the resource libraries are located.
+Hello world contains the server file that was uploaded to the raspberry pi
