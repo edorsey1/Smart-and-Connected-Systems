@@ -1,9 +1,9 @@
-#  Skill Name
+#  21 Raspberry Pi
 
-Author: FirstName LastName, YYYY-MM-DD
+Author: Erin Dorsey, Yuting Chen, Laura Joy Erb, 2019-10-07
 
 ## Summary
-
+Configured raspberry pi and built simple web server to print "Hello World!"
 
 ## Sketches and Photos
 
