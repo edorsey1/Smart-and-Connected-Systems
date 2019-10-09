@@ -3,11 +3,11 @@
 Author: Erin Dorsey, 2019-10-01
 
 ## Summary
-Built a multi series canvas js chart using data from a closing stock prices by day csv file.
+Built a multi series canvas js chart using data from a closing stock prices by day csv file (stocks.csv).
 
 ## Sketches and Photos
-![Image](./images/canvas1.PNG)
-![Image](./images/canvas2.PNG)
+![Image](./images/capture.PNG)
+
 
 ## Modules, Tools, Source Used in Solution
 
