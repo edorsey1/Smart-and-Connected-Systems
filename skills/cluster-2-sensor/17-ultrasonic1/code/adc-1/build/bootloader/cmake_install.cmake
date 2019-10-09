@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/erind/OneDrive/Desktop/esp-idf/components/bootloader/subproject
+# Install script for directory: C:/Users/erind/OneDrive/Desktop/esp-idf/components/bootloader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/bootloader")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/adc-1")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -32,28 +32,3 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "TRUE")
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/soc/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/spi_flash/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/micro-ecc/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/bootloader_support/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/main/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/esptool_py/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/partition_table/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/esp32/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/log/cmake_install.cmake")
-  include("C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/bootloader/cmake_install.cmake")
-
-endif()
-
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
-       "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-2-sensor/17-ultrasonic1/code/adc-1/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
-     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
