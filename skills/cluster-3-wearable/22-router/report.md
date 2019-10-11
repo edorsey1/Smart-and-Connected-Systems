@@ -1,9 +1,9 @@
-#  Skill Name
+#  22 Router
 
-Author: FirstName LastName, YYYY-MM-DD
+Author: Erin Dorsey, 2019-10-11
 
 ## Summary
-
+Successfully booted and configured router named Group_18
 
 ## Sketches and Photos
 
