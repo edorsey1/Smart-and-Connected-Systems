@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+f7f53560da8d638bdd2b6006df349cf7d7f7112c refs/heads/master
+9a6702ee9eca10bdb3bffa4bd93372f67443c07e refs/heads/socket-trials
+0ac9a4bc3254311779a596f0c93cd7cd0b8c866d refs/remotes/origin/LastName-FirstName/skills/cluster-0-installs/02-github
+2bd9ce394246f2e523f085d06c6246bfb761490e refs/remotes/origin/master
+9a6702ee9eca10bdb3bffa4bd93372f67443c07e refs/remotes/origin/socket-trials

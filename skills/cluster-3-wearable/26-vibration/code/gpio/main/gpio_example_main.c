@@ -1,11 +1,3 @@
-/* GPIO Example
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -13,23 +5,11 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "driver/gpio.h"
-
-/**
- * Brief:
- * This test code shows how to configure gpio and how to use gpio interrupt.
- *
- * GPIO status:
- * GPIO18: output
- * GPIO19: output
- * GPIO4:  input, pulled up, interrupt from rising edge and falling edge
- * GPIO5:  input, pulled up, interrupt from rising edge.
- *
- * Test:
- * Connect GPIO18 with GPIO4
- * Connect GPIO19 with GPIO5
- * Generate pulses on GPIO18/19, that triggers interrupt on GPIO4/5
- *
- */
+#include "driver/uart.h"
+#include "driver/ledc.h"
+#include "esp_err.h"
+#include "esp_vfs_dev.h"
+#include "sdkconfig.h"
 
 #define GPIO_OUTPUT_IO_0    18    // MOSI
 #define GPIO_OUTPUT_IO_1    19    // MISO
@@ -39,9 +19,17 @@
 #define GPIO_INPUT_PIN_SEL  ((1ULL<<GPIO_INPUT_IO_0) | (1ULL<<GPIO_INPUT_IO_1))
 #define ESP_INTR_FLAG_DEFAULT 0
 
-#define LED_ONBOARD 13
+#define LEDC_HS_TIMER          LEDC_TIMER_0
+#define LEDC_HS_MODE           LEDC_HIGH_SPEED_MODE
+#define LEDC_HS_CH0_GPIO       (13)
+#define LEDC_HS_CH0_CHANNEL    LEDC_CHANNEL_0
+
+#define LEDC_LS_TIMER          LEDC_TIMER_1
+#define LEDC_LS_MODE           LEDC_LOW_SPEED_MODE
 
 static xQueueHandle gpio_evt_queue = NULL;
+
+int tap = 0;
 
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
@@ -56,18 +44,14 @@ static void gpio_task_example(void* arg)
         if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {
             //printf("GPIO[%d] intr, val: %d\n", io_num, gpio_get_level(io_num));
             printf("Tap\n");
-
-            /*
-            gpio_set_level(LED_ONBOARD, 0);
-            vTaskDelay(1000);
-            gpio_set_level(LED_ONBOARD, 1);
-            vTaskDelay(1000); */
+            tap = 1;
         }
     }
 }
 
 void app_main(void)
 {
+    /* ****************Configure GPIO******************* */
     gpio_config_t io_conf;
     //disable interrupt
     io_conf.intr_type = GPIO_PIN_INTR_DISABLE;
@@ -112,9 +96,33 @@ void app_main(void)
     //hook isr handler for specific gpio pin again
     gpio_isr_handler_add(GPIO_INPUT_IO_0, gpio_isr_handler, (void*) GPIO_INPUT_IO_0);
 
-    // Configure onboard LED
-    gpio_set_direction(LED_ONBOARD, GPIO_MODE_OUTPUT);
 
+    /* ****************Configure LED******************* */
+    ledc_timer_config_t ledc_timer = {
+        .duty_resolution = LEDC_TIMER_13_BIT, // resolution of PWM duty
+        .freq_hz = 5000,                      // frequency of PWM signal
+        .speed_mode = LEDC_HS_MODE,           // timer mode
+        .timer_num = LEDC_HS_TIMER,            // timer index
+        .clk_cfg = LEDC_AUTO_CLK,              // Auto select the source clock
+    };
+    // Set configuration of timer0 for high speed channels
+    ledc_timer_config(&ledc_timer);
+
+    // Prepare and set configuration of timer1 for low speed channels
+    ledc_timer.speed_mode = LEDC_LS_MODE;
+    ledc_timer.timer_num = LEDC_LS_TIMER;
+    ledc_timer_config(&ledc_timer);
+
+    ledc_channel_config_t ledc_channel = {
+            .channel    = LEDC_HS_CH0_CHANNEL,
+            .duty       = 0,
+            .gpio_num   = LEDC_HS_CH0_GPIO,
+            .speed_mode = LEDC_HS_MODE,
+            .hpoint     = 0,
+            .timer_sel  = LEDC_HS_TIMER
+    };
+
+    ledc_channel_config(&ledc_channel);
 
     int cnt = 0;
     while(1) {
@@ -122,5 +130,18 @@ void app_main(void)
         vTaskDelay(1000 / portTICK_RATE_MS);
         gpio_set_level(GPIO_OUTPUT_IO_0, cnt % 2);
         gpio_set_level(GPIO_OUTPUT_IO_1, cnt % 2);
+        if (tap == 1)
+        {
+          // Turns the led on and off
+          int duty = 5000;
+          ledc_set_duty(ledc_channel.speed_mode, ledc_channel.channel, duty);
+          ledc_update_duty(ledc_channel.speed_mode, ledc_channel.channel);
+          vTaskDelay(1000 / portTICK_RATE_MS);
+          duty = 0;
+          ledc_set_duty(ledc_channel.speed_mode, ledc_channel.channel, duty);
+          ledc_update_duty(ledc_channel.speed_mode, ledc_channel.channel);
+          vTaskDelay(1000 / portTICK_RATE_MS);
+          tap = 0;
+        }
     }
 }
