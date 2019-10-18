@@ -864,3 +864,15 @@
 118	248	5929632139313907	bootloader/bootloader.elf	39c31c7f9ed7bc73
 118	248	5929632139313907	bootloader/bootloader.bin	39c31c7f9ed7bc73
 118	248	5929632139313907	bootloader/bootloader.map	39c31c7f9ed7bc73
+4218	8549	5929632139313907	bootloader-prefix/src/bootloader-stamp/bootloader-build	39c31c7f9ed7bc73
+4218	8549	5929632139313907	bootloader/bootloader.elf	39c31c7f9ed7bc73
+4218	8549	5929632139313907	bootloader/bootloader.bin	39c31c7f9ed7bc73
+4218	8549	5929632139313907	bootloader/bootloader.map	39c31c7f9ed7bc73
+4308	22508	5930645306626729	main/CMakeFiles/main.dir/gpio_example_main.c.obj	5f2beee5549cbe57
+22509	24102	5930645326084619	main/libmain.a	bb9275b4885fab04
+24102	35050	5930645435102879	gpio.elf	e9a8ffc6d39ef281
+35050	36696	5930645452357029	gpio.bin	70e43ec5c260a8a6
+129	231	5929632139313907	bootloader-prefix/src/bootloader-stamp/bootloader-build	39c31c7f9ed7bc73
+129	231	5929632139313907	bootloader/bootloader.elf	39c31c7f9ed7bc73
+129	231	5929632139313907	bootloader/bootloader.bin	39c31c7f9ed7bc73
+129	231	5929632139313907	bootloader/bootloader.map	39c31c7f9ed7bc73

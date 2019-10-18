@@ -19,6 +19,8 @@
 
 static xQueueHandle gpio_evt_queue = NULL;
 
+bool tap = false;
+
 static void IRAM_ATTR gpio_isr_handler(void* arg)
 {
     uint32_t gpio_num = (uint32_t) arg;
@@ -27,21 +29,32 @@ static void IRAM_ATTR gpio_isr_handler(void* arg)
 
 static void gpio_task_example(void* arg)
 {
-    gpio_pad_select_gpio(BLINK_GPIO);
-    gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
-
     uint32_t io_num;
     for(;;) {
-        if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY)) {
+        if(xQueueReceive(gpio_evt_queue, &io_num, portMAX_DELAY) && !tap) {
             //printf("GPIO[%d] intr, val: %d\n", io_num, gpio_get_level(io_num));
             printf("Tap\n");
+            tap = true;
             gpio_set_level(BLINK_GPIO, 1);
         }
     }
 }
 
+static void debounce() {
+  while(1)
+  {
+    tap = false;
+    gpio_set_level(BLINK_GPIO, 0);
+    vTaskDelay(75);
+  }
+}
+
 void app_main(void)
 {
+    // Configure LED
+    gpio_pad_select_gpio(BLINK_GPIO);
+    gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
+
     /* ****************Configure GPIO******************* */
     gpio_config_t io_conf;
     //disable interrupt
@@ -74,6 +87,7 @@ void app_main(void)
     gpio_evt_queue = xQueueCreate(10, sizeof(uint32_t));
     //start gpio task
     xTaskCreate(gpio_task_example, "gpio_task_example", 2048, NULL, 10, NULL);
+    xTaskCreate(debounce, "debounce", 2048, NULL, 10, NULL);
 
     //install gpio isr service
     gpio_install_isr_service(ESP_INTR_FLAG_DEFAULT);
@@ -94,6 +108,6 @@ void app_main(void)
         vTaskDelay(1000 / portTICK_RATE_MS);
         gpio_set_level(GPIO_OUTPUT_IO_0, cnt % 2);
         gpio_set_level(GPIO_OUTPUT_IO_1, cnt % 2);
-        gpio_set_level(BLINK_GPIO, 0);
+
     }
 }
