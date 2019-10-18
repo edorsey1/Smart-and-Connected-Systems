@@ -221,10 +221,9 @@ void calcRP(float x, float y, float z){
   double y_buff = y;
   double z_buff = z;
   float roll = atan2(y_buff, z_buff) * 57.3;
-  float pitch = atan2((-1 * x_buff), sqrt(y_buff * y_buff + z_buff * z_buff)) * 57.3;
-  //float yaw = 180 *
-  //yaw = 180 * atan (accelerationZ/sqrt(accelerationX*accelerationX + accelerationZ*accelerationZ))/M_PI;
-  //printf("roll: %.2f \t pitch: %.2f \n", roll, pitch);
+  float pitch = atan2((x_buff), sqrt(y_buff * y_buff + z_buff * z_buff)) * 57.3;
+  //float yaw = atan2((y_buff), sqrt(x_buff * x_buff + z_buff * z_buff)) * 57.3; yaw is fake
+  printf("roll: %.2f \t pitch: %.2f \t\n", roll, pitch);
 }
 
 // Task to continuously poll acceleration and calculate roll and pitch
