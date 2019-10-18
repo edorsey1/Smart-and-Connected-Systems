@@ -1,9 +1,3 @@
-/*
-  Adapted I2C example code to work with the Adafruit ADXL343 accelerometer. Ported and referenced a lot of code from the Adafruit_ADXL343 driver code.
-  ----> https://www.adafruit.com/product/4097
-
-  Emily Lam, Aug 2019 for BU EC444
-*/
 #include <stdio.h>
 #include <math.h>
 #include "driver/i2c.h"
@@ -107,21 +101,52 @@ int getDeviceID(uint8_t *data) {
 // Write one byte to register
 int writeRegister(uint8_t reg, uint8_t data) {
   // YOUR CODE HERE
+  i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+  i2c_master_start(cmd);
+  i2c_master_write_byte(cmd, ( SLAVE_ADDR << 1 ) | WRITE_BIT, ACK_CHECK_EN);
+  i2c_master_write_byte(cmd, reg, ACK_CHECK_EN);
+  i2c_master_write_byte(cmd, data, ACK_CHECK_EN);
+  i2c_master_stop(cmd);
+  i2c_master_cmd_begin(I2C_EXAMPLE_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
+  i2c_cmd_link_delete(cmd);
+  return 0;
 }
 
 // Read register
-uint8_t readRegister(uint8_t reg) {
-  // YOUR CODE HERE
+uint8_t readRegister(uint8_t reg, uint8_t* regData) {
+  i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+  i2c_master_start(cmd);
+  i2c_master_write_byte(cmd, ( SLAVE_ADDR << 1 ) | WRITE_BIT, ACK_CHECK_EN);
+  i2c_master_write_byte(cmd, reg, ACK_CHECK_EN);
+  i2c_master_start(cmd);
+  i2c_master_write_byte(cmd, ( SLAVE_ADDR << 1 ) | READ_BIT, ACK_CHECK_EN);
+  i2c_master_read_byte(cmd, regData, ACK_CHECK_DIS);
+  i2c_master_stop(cmd);
+  i2c_master_cmd_begin(I2C_EXAMPLE_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
+  i2c_cmd_link_delete(cmd);
+  return 0;
 }
 
 // read 16 bits (2 bytes)
-int16_t read16(uint8_t reg) {
-  // YOUR CODE HERE
+int16_t read16(uint8_t reg, uint8_t *first, uint8_t *second) {
+  i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+  i2c_master_start(cmd);
+  i2c_master_write_byte(cmd, ( SLAVE_ADDR << 1 ) | WRITE_BIT, ACK_CHECK_EN);
+  i2c_master_write_byte(cmd, reg, ACK_CHECK_EN);
+  i2c_master_start(cmd);
+  i2c_master_write_byte(cmd, ( SLAVE_ADDR << 1 ) | READ_BIT, ACK_CHECK_EN);
+  i2c_master_read_byte(cmd, first, ACK_CHECK_EN);
+  i2c_master_read_byte(cmd, second, ACK_CHECK_DIS);
+  i2c_master_stop(cmd);
+  i2c_master_cmd_begin(I2C_EXAMPLE_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
+  i2c_cmd_link_delete(cmd);
+  return 0;
 }
 
 void setRange(range_t range) {
   /* Red the data format register to preserve bits */
-  uint8_t format = readRegister(ADXL343_REG_DATA_FORMAT);
+  uint8_t format;
+  readRegister(ADXL343_REG_DATA_FORMAT, &format);
 
   /* Update the data rate */
   format &= ~0x0F;
@@ -136,28 +161,70 @@ void setRange(range_t range) {
 }
 
 range_t getRange(void) {
-  /* Red the data format register to preserve bits */
-  return (range_t)(readRegister(ADXL343_REG_DATA_FORMAT) & 0x03);
+  /* Read the data format register to preserve bits */
+  uint8_t regData;
+  readRegister(ADXL343_REG_DATA_FORMAT, &regData);
+  return (range_t)(regData & 0x03);
 }
 
 dataRate_t getDataRate(void) {
-  return (dataRate_t)(readRegister(ADXL343_REG_BW_RATE) & 0x0F);
+  uint8_t regData;
+  readRegister(ADXL343_REG_BW_RATE, &regData);
+  return (dataRate_t) (regData & 0x0F);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
 
 // function to get acceleration
 void getAccel(float * xp, float *yp, float *zp) {
-  *xp = read16(ADXL343_REG_DATAX0) * ADXL343_MG2G_MULTIPLIER * SENSORS_GRAVITY_STANDARD;
-  *yp = read16(ADXL343_REG_DATAY0) * ADXL343_MG2G_MULTIPLIER * SENSORS_GRAVITY_STANDARD;
-  *zp = read16(ADXL343_REG_DATAZ0) * ADXL343_MG2G_MULTIPLIER * SENSORS_GRAVITY_STANDARD;
- printf("X: %.2f \t Y: %.2f \t Z: %.2f\n", *xp, *yp, *zp);
+
+  uint8_t regDataX0;
+  uint8_t regDataY0;
+  uint8_t regDataZ0;
+
+  uint8_t regDataX1;
+  uint8_t regDataY1;
+  uint8_t regDataZ1;
+
+  readRegister(ADXL343_REG_DATAX0, &regDataX0);
+  readRegister(ADXL343_REG_DATAX1, &regDataX1);
+
+  readRegister(ADXL343_REG_DATAY0, &regDataY0);
+  readRegister(ADXL343_REG_DATAY1, &regDataY1);
+
+  readRegister(ADXL343_REG_DATAZ0, &regDataZ0);
+  readRegister(ADXL343_REG_DATAZ1, &regDataZ1);
+
+  uint16_t dataX;
+  uint16_t dataY;
+  uint16_t dataZ;
+
+  dataX = (regDataX0 | (regDataX1 << 8));
+  dataY = (regDataY0 | (regDataY1 << 8));
+  dataZ = (regDataZ0 | (regDataZ1 << 8));
+
+  int16_t intX = dataX;
+  int16_t intY = dataY;
+  int16_t intZ = dataZ;
+
+  // casting to float
+  *xp = intX * ADXL343_MG2G_MULTIPLIER * SENSORS_GRAVITY_STANDARD;
+  *yp = intY * ADXL343_MG2G_MULTIPLIER * SENSORS_GRAVITY_STANDARD;
+  *zp = intZ * ADXL343_MG2G_MULTIPLIER * SENSORS_GRAVITY_STANDARD;
+
+  printf("X: %.2f \t Y: %.2f \t Z: %.2f\n", *xp, *yp, *zp);
 }
 
 // function to print roll and pitch
 void calcRP(float x, float y, float z){
-  // YOUR CODE HERE
-  printf("roll: %.2f \t pitch: %.2f \n", roll, pitch);
+  double x_buff = x;
+  double y_buff = y;
+  double z_buff = z;
+  float roll = atan2(y_buff, z_buff) * 57.3;
+  float pitch = atan2((-1 * x_buff), sqrt(y_buff * y_buff + z_buff * z_buff)) * 57.3;
+  //float yaw = 180 *
+  //yaw = 180 * atan (accelerationZ/sqrt(accelerationX*accelerationX + accelerationZ*accelerationZ))/M_PI;
+  //printf("roll: %.2f \t pitch: %.2f \n", roll, pitch);
 }
 
 // Task to continuously poll acceleration and calculate roll and pitch
@@ -182,6 +249,7 @@ void app_main() {
   getDeviceID(&deviceID);
   if (deviceID == 0xE5) {
     printf("\n>> Found ADAXL343\n");
+
   }
 
   // Disable interrupts
