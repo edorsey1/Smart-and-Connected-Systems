@@ -223,23 +223,65 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //No help, variable specified on the command line.
 EXTRA_COMPONENT_DIRS:UNINITIALIZED=C:/Users/erind/OneDrive/Desktop/esp-idf/components/bootloader
 
+//GCC is 5.2.0 version
+GCC_NOT_5_2_0:STRING=0
+
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
 
 //No help, variable specified on the command line.
 IDF_PATH:UNINITIALIZED=C:/Users/erind/OneDrive/Desktop/esp-idf
 
+//IDF Build Target
+IDF_TARGET:STRING=esp32
+
+//No help, variable specified on the command line.
+LEGACY_INCLUDE_COMMON_HEADERS:UNINITIALIZED=
+
 //Path to a program.
 MCONF:FILEPATH=C:/Users/erind/.espressif/tools/mconf/v4.6.0.0-idf-20190628/mconf-idf.exe
 
 //No help, variable specified on the command line.
+PYTHON_DEPS_CHECKED:UNINITIALIZED=1
+
+//No help, variable specified on the command line.
 SDKCONFIG:UNINITIALIZED=C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-1-clock/08-console/code/consoleio/sdkconfig
+
+//Dependencies for the target
+__idf_bootloader_support_LIB_DEPENDS:STATIC=general;__idf_log;general;__idf_xtensa;
+
+//Dependencies for the target
+__idf_efuse_LIB_DEPENDS:STATIC=general;__idf_log;general;__idf_xtensa;
+
+//Dependencies for the target
+__idf_log_LIB_DEPENDS:STATIC=general;__idf_xtensa;
+
+//Dependencies for the target
+__idf_main_LIB_DEPENDS:STATIC=general;__idf_log;general;__idf_xtensa;
+
+//Dependencies for the target
+__idf_micro-ecc_LIB_DEPENDS:STATIC=general;__idf_log;general;__idf_xtensa;
+
+//Dependencies for the target
+__idf_soc_LIB_DEPENDS:STATIC=general;__idf_log;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;
+
+//Dependencies for the target
+__idf_spi_flash_LIB_DEPENDS:STATIC=general;__idf_log;general;__idf_xtensa;
+
+//Dependencies for the target
+__idf_xtensa_LIB_DEPENDS:STATIC=general;__idf_log;general;__idf_esp_rom;general;__idf_esp_common;general;C:/Users/erind/OneDrive/Desktop/esp-idf/components/xtensa/esp32/libhal.a;
 
 //Value Computed by CMake
 bootloader_BINARY_DIR:STATIC=C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-1-clock/08-console/code/consoleio/build/bootloader
 
 //Value Computed by CMake
 bootloader_SOURCE_DIR:STATIC=C:/Users/erind/OneDrive/Desktop/esp-idf/components/bootloader/subproject
+
+//Value Computed by CMake
+esp-idf_BINARY_DIR:STATIC=C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-1-clock/08-console/code/consoleio/build/bootloader/esp-idf
+
+//Value Computed by CMake
+esp-idf_SOURCE_DIR:STATIC=C:/Users/erind/OneDrive/Desktop/esp-idf
 
 
 ########################
@@ -349,7 +391,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=11
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=16
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//No help, variable specified on the command line.
+CCACHE_ENABLE:UNINITIALIZED=0
+
 //Path to a program.
 CCACHE_FOUND:FILEPATH=C:/Users/erind/.espressif/tools/ccache/3.7/ccache.exe
 
@@ -43,8 +46,8 @@ CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the ASM compiler during RELWITHDEBINFO builds.
 CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
+//Choose the type of build: None Debug Release Coverage ASan ASanDbg
+// MemSan MemSanDbg Check CheckFull
 CMAKE_BUILD_TYPE:STRING=
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
@@ -220,14 +223,233 @@ CMAKE_TOOLCHAIN_FILE:FILEPATH=C:/Users/erind/OneDrive/Desktop/esp-idf/tools/cmak
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Build mbed TLS programs.
+ENABLE_PROGRAMS:BOOL=
+
+//Build mbed TLS tests.
+ENABLE_TESTING:BOOL=
+
+//Build mbed TLS with zlib library.
+ENABLE_ZLIB_SUPPORT:BOOL=OFF
+
+//No help, variable specified on the command line.
+ESP_PLATFORM:UNINITIALIZED=1
+
+//GCC is 5.2.0 version
+GCC_NOT_5_2_0:STRING=0
+
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=C:/Program Files/Git/cmd/git.exe
+
+//IDF Build Target
+IDF_TARGET:STRING=esp32
+
+//Install mbed TLS headers.
+INSTALL_MBEDTLS_HEADERS:BOOL=ON
+
+//Explicitly link mbed TLS library to pthread.
+LINK_WITH_PTHREAD:BOOL=OFF
 
 //Path to a program.
 MCONF:FILEPATH=C:/Users/erind/.espressif/tools/mconf/v4.6.0.0-idf-20190628/mconf-idf.exe
 
+//Path to a program.
+PERL_EXECUTABLE:FILEPATH=PERL_EXECUTABLE-NOTFOUND
+
 //No help, variable specified on the command line.
 PYTHON_DEPS_CHECKED:UNINITIALIZED=1
+
+//Path to a program.
+PYTHON_EXECUTABLE:FILEPATH=C:/Users/erind/.espressif/python_env/idf3.2_py3.7_env/Scripts/python.exe
+
+//Allow unsafe builds. These builds ARE NOT SECURE.
+UNSAFE_BUILD:BOOL=OFF
+
+//Build mbed TLS with the pkcs11-helper library.
+USE_PKCS11_HELPER_LIBRARY:BOOL=OFF
+
+//Build mbed TLS shared library.
+USE_SHARED_MBEDTLS_LIBRARY:BOOL=OFF
+
+//Build mbed TLS static library.
+USE_STATIC_MBEDTLS_LIBRARY:BOOL=ON
+
+//Dependencies for the target
+__idf_app_trace_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;general;gcov;general;c;general;m;general;gcc;
+
+//Dependencies for the target
+__idf_app_update_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_asio_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_bootloader_support_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_coap_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_console_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_cxx_LIB_DEPENDS:STATIC=general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;general;stdc++;general;gcc;
+
+//Dependencies for the target
+__idf_driver_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_efuse_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp-tls_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp32_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;gcc;
+
+//Dependencies for the target
+__idf_esp_adc_cal_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_common_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_eth_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_event_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_gdbstub_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_http_client_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_http_server_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_https_ota_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_local_ctrl_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_ringbuf_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_rom_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_websocket_client_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_esp_wifi_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp_wifi/lib_esp32;general;coexist;general;core;general;espnow;general;mesh;general;net80211;general;phy;general;pp;general;rtc;general;smartconfig;
+
+//Dependencies for the target
+__idf_espcoredump_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_expat_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_fatfs_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_freemodbus_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_freertos_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_heap_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_jsmn_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_json_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_libsodium_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_log_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_lwip_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_main_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_mdns_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_mqtt_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_newlib_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;general;c;general;m;general;gcc;
+
+//Dependencies for the target
+__idf_nghttp_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_nvs_flash_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_openssl_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_protobuf-c_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_protocomm_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_pthread_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_sdmmc_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_smartconfig_ack_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_soc_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_spi_flash_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_spiffs_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_tcp_transport_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_tcpip_adapter_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_ulp_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_unity_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_vfs_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_wear_levelling_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_wifi_provisioning_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_wpa_supplicant_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+__idf_xtensa_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_esp32;general;C:/Users/erind/OneDrive/Desktop/esp-idf/components/xtensa/esp32/libhal.a;
 
 //Dependencies for the target
 app_trace_LIB_DEPENDS:STATIC=general;gcov;
@@ -241,11 +463,29 @@ consoleio_SOURCE_DIR:STATIC=C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skill
 //Dependencies for the target
 cxx_LIB_DEPENDS:STATIC=general;stdc++;general;-u __cxa_guard_dummy;general;-u __cxx_fatal_exception;
 
+//Value Computed by CMake
+esp-idf_BINARY_DIR:STATIC=C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-1-clock/08-console/code/consoleio/build/esp-idf
+
+//Value Computed by CMake
+esp-idf_SOURCE_DIR:STATIC=C:/Users/erind/OneDrive/Desktop/esp-idf
+
 //Dependencies for the target
 esp32_LIB_DEPENDS:STATIC=general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp32/lib;general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp32/ld/wifi_iram_opt;general;coexist;general;core;general;espnow;general;mesh;general;net80211;general;phy;general;pp;general;rtc;general;smartconfig;general;wpa2;general;wpa;general;wps;general;-L C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-1-clock/08-console/code/consoleio/build/esp32;general;-T esp32_out.ld;general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp32/ld;general;-T esp32.common.ld;general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp32/ld;general;-T esp32.rom.ld;general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp32/ld;general;-T esp32.peripherals.ld;general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp32/ld;general;-T esp32.rom.libgcc.ld;general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp32/ld;general;-T esp32.rom.spiram_incompatible_fns.ld;general;C:/Users/erind/OneDrive/Desktop/esp-idf/components/esp32/libhal.a;general;gcc;general;-u call_user_start_cpu0;general;-u ld_include_panic_highint_hdl;
 
 //Dependencies for the target
 freertos_LIB_DEPENDS:STATIC=general;-Wl,--undefined=uxTopUsedPriority;
+
+//Value Computed by CMake
+mbed TLS_BINARY_DIR:STATIC=C:/Users/erind/Documents/Cpp/EC444/Dorsey-Erin/skills/cluster-1-clock/08-console/code/consoleio/build/esp-idf/mbedtls/mbedtls
+
+//Value Computed by CMake
+mbed TLS_SOURCE_DIR:STATIC=C:/Users/erind/OneDrive/Desktop/esp-idf/components/mbedtls/mbedtls
+
+//Dependencies for the target
+mbedcrypto_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;
+
+//Dependencies for the target
+mbedx509_LIB_DEPENDS:STATIC=general;__idf_cxx;general;__idf_newlib;general;__idf_freertos;general;__idf_heap;general;__idf_log;general;__idf_soc;general;__idf_esp_rom;general;__idf_esp_common;general;__idf_xtensa;general;__idf_esp32;general;mbedcrypto;
 
 //Dependencies for the target
 newlib_LIB_DEPENDS:STATIC=general;-L C:/Users/erind/OneDrive/Desktop/esp-idf/components/newlib/lib;general;c;general;m;
@@ -358,7 +598,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=59
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -399,6 +639,12 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Git
 FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[C:/Program Files/Git/cmd/git.exe][v2.21.0.windows.1()]
+//Details about finding PythonInterp
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[C:/Users/erind/.espressif/python_env/idf3.2_py3.7_env/Scripts/python.exe][v3.7.3()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PERL_EXECUTABLE
+PERL_EXECUTABLE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PYTHON_EXECUTABLE
+PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 

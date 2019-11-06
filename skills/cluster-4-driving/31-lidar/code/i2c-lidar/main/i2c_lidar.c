@@ -16,10 +16,11 @@
 #define NACK_VAL                           0xFF // i2c nack value
 
 // Lidar
-#define SLAVE_ADDR                         0x62
+#define SLAVE_ADDR                         0x62          // Default I2C Address of LIDAR-Lite.
 #define REGISTER                           0x00          // Register to write to initiate ranging.
 #define VALUE                              0x04          // Value to initiate ranging.
-#define HIGH_LOW                           0x8f          // Register to get both High and Low bytes in 1 call.
+#define HIGH_LOW                           0x8f          // Register to get both High and Low bytes in 1 call. // not working for unknown reason
+
 
 // Function to initiate i2c -- note the MSB declaration!
 static void i2c_master_init(){
@@ -81,11 +82,13 @@ static void i2c_scanner() {
 
 ////////////////////////////////////////////////////////////////////////////////
 
-// Lidar Functions ///////////////////////////////////////////////////////////
+// Lidar Functions /////////////////////////////////////////////////////////////
 
 // Write one byte to register
 int writeRegister(uint8_t reg, uint8_t data) {
-  // YOUR CODE HERE
+
+  printf("--Writing %d to reg %d!--\n", data, reg);
+
   i2c_cmd_handle_t cmd = i2c_cmd_link_create();
   i2c_master_start(cmd);
   i2c_master_write_byte(cmd, ( SLAVE_ADDR << 1 ) | WRITE_BIT, ACK_CHECK_EN);
@@ -106,14 +109,22 @@ uint8_t readRegister(uint8_t reg, uint8_t* regData) {
   i2c_master_start(cmd);
   i2c_master_write_byte(cmd, ( SLAVE_ADDR << 1 ) | READ_BIT, ACK_CHECK_EN);
   i2c_master_read_byte(cmd, regData, ACK_CHECK_DIS);
+
+  //printf("--Read in value: *regData = %d\n", *regData);
+
   i2c_master_stop(cmd);
   i2c_master_cmd_begin(I2C_EXAMPLE_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
   i2c_cmd_link_delete(cmd);
+
+  printf("---Read in value: *regData = %d\n", *regData);
   return 0;
 }
 
-// read 16 bits (2 bytes)
+// read 16 bits (2 bytes) -- not working for unknown reason
 int16_t read16(uint8_t reg, uint8_t *first, uint8_t *second) {
+
+  printf("--Reading 2 bytes!--\n");
+
   i2c_cmd_handle_t cmd = i2c_cmd_link_create();
   i2c_master_start(cmd);
   i2c_master_write_byte(cmd, ( SLAVE_ADDR << 1 ) | WRITE_BIT, ACK_CHECK_EN);
@@ -125,6 +136,10 @@ int16_t read16(uint8_t reg, uint8_t *first, uint8_t *second) {
   i2c_master_stop(cmd);
   i2c_master_cmd_begin(I2C_EXAMPLE_MASTER_NUM, cmd, 1000 / portTICK_RATE_MS);
   i2c_cmd_link_delete(cmd);
+
+  printf("--Read in value: *first = %d\n", *first);
+  printf("--Read in value: *second = %d\n", *second);
+
   return 0;
 }
 
@@ -133,26 +148,43 @@ int16_t read16(uint8_t reg, uint8_t *first, uint8_t *second) {
 // Task to continuously poll acceleration and calculate roll and pitch
 
 static void test_lidar() {
-  printf("\nTesting Lidar\n");
-  while (1) {
-    vTaskDelay(500 / portTICK_RATE_MS);
+  printf("\n>> Testing Lidar\n");
+  while(1) {
+    uint8_t reg = REGISTER;
+    uint8_t data = VALUE;
+    writeRegister(reg, data);
+
+    vTaskDelay(20 / portTICK_RATE_MS);
+
+    uint8_t high_dist = 0;
+    uint8_t low_dist = 0;
+    uint8_t *first = &high_dist;
+    uint8_t *second = &low_dist;
+
+    uint8_t regH = 0x0f;
+    uint8_t regL = 0x10;
+
+    readRegister(regH, first);
+    readRegister(regL, second);
+
+    printf("high dist = %d\n", high_dist);
+    printf("low dist = %d\n", low_dist);
+
+    int distance = (high_dist << 8) + low_dist;  // Shift high byte [0] 8 to the left and add low byte [1] to create 16-bit int
+
+    // Print Distance
+    printf("*****Distance is: %d cm*****\n\n", distance);
+    vTaskDelay(100);
   }
 }
 
 void app_main() {
 
   // Routine
+
   i2c_master_init();
   i2c_scanner();
 
-  }
-
-  // Initiate and begin acquisition
-  writeRegister(VALUE, REGISTER);
-
-  // Enable measurements
-  //writeRegister(ADXL343_REG_POWER_CTL, 0x08);
-
-  // Create task to poll ADXL343
+  // Create task to poll LIDAR
   xTaskCreate(test_lidar,"test_lidar", 4096, NULL, 5, NULL);
 }
