@@ -1,6 +1,6 @@
-#  Skill Name
+#  PID Control Using the Micro
 
-Author: FirstName LastName, YYYY-MM-DD
+Author: Erin Dorsey, 2019-11-08
 
 ## Summary
 
